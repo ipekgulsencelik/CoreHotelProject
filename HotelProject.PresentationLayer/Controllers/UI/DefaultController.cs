@@ -8,5 +8,8 @@ namespace HotelProject.PresentationLayer.Controllers.UI
         {
             return View();
         }
+        public IActionResult About() {
+            return View();
+        }
     }
 }
