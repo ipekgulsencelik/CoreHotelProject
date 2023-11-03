@@ -1,4 +1,8 @@
+using HotelProject.BusinessLayer.Abstract;
+using HotelProject.BusinessLayer.Concrete;
+using HotelProject.DataAccessLayer.Abstract;
 using HotelProject.DataAccessLayer.Concrete;
+using HotelProject.DataAccessLayer.EntityFramework;
 using HotelProject.EntityLayer.Concrete;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -8,6 +12,12 @@ builder.Services.AddControllersWithViews();
 
 builder.Services.AddDbContext<Context>();
 builder.Services.AddIdentity<AppUser, AppRole>().AddEntityFrameworkStores<Context>();
+
+builder.Services.AddScoped<IContactDAL, EFContactDAL>();
+builder.Services.AddScoped<IContactService, ContactManager>();
+
+builder.Services.AddScoped<IMessageDAL, EFMessageDAL>();
+builder.Services.AddScoped<IMessageService, MessageManager>();
 
 var app = builder.Build();
 

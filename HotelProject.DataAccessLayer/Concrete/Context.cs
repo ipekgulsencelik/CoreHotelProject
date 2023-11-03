@@ -10,5 +10,8 @@ namespace HotelProject.DataAccessLayer.Concrete
         {
             optionsBuilder.UseSqlServer("server=MSI;database=HotelDB;integrated security=true;trusted_connection=true;encrypt=false");
         }
+
+        public DbSet<Contact> Contacts { get; set; }
+        public DbSet<Message> Messages { get; set; }
     }
 }
