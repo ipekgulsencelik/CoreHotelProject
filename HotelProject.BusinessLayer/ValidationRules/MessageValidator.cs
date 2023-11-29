@@ -3,7 +3,7 @@ using HotelProject.EntityLayer.Concrete;
 
 namespace HotelProject.BusinessLayer.ValidationRules
 {
-    public class MessageValidator : AbstractValidator<Message>
+    public class MessageValidator : AbstractValidator<ContactMessage>
     {
         public MessageValidator()
         {

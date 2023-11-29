@@ -13,67 +13,67 @@ namespace HotelProject.BusinessLayer.Concrete
             _messageDAL = messageDAL;
         }
 
-        public void TDelete(Message entity)
+        public void TDelete(ContactMessage entity)
         {
             _messageDAL.Delete(entity);
         }
 
-        public Message TGetByID(int id)
+        public ContactMessage TGetByID(int id)
         {
             return _messageDAL.GetByID(id);
         }
 
-        public List<Message> TGetDraftList(string session)
+        public List<ContactMessage> TGetDraftList(string session)
         {
             return _messageDAL.GetDraftList(session);
         }
 
-        public List<Message> TGetImportantList(string session)
+        public List<ContactMessage> TGetImportantList(string session)
         {
             return _messageDAL.GetImportantList(session);
         }
 
-        public List<Message> TGetInboxList(string session)
+        public List<ContactMessage> TGetInboxList(string session)
         {
             return _messageDAL.GetInboxList(session);
         }
 
-        public List<Message> TGetList()
+        public List<ContactMessage> TGetList()
         {
             return _messageDAL.GetListAll();
         }
 
-        public List<Message> TGetReadList(string session)
+        public List<ContactMessage> TGetReadList(string session)
         {
             return _messageDAL.GetReadList(session);
         }
 
-        public List<Message> TGetSendboxList(string session)
+        public List<ContactMessage> TGetSendboxList(string session)
         {
             return _messageDAL.GetSendboxList(session);
         }
 
-        public List<Message> TGetSpamList(string session)
+        public List<ContactMessage> TGetSpamList(string session)
         {
             return _messageDAL.GetSpamList(session);
         }
 
-        public List<Message> TGetTrashList()
+        public List<ContactMessage> TGetTrashList()
         {
             return _messageDAL.GetTrashList();
         }
 
-        public List<Message> TGetUnReadList(string session)
+        public List<ContactMessage> TGetUnReadList(string session)
         {
             return _messageDAL.GetUnReadList(session);
         }
 
-        public void TInsert(Message entity)
+        public void TInsert(ContactMessage entity)
         {
             _messageDAL.Insert(entity);
         }
 
-        public void TUpdate(Message entity)
+        public void TUpdate(ContactMessage entity)
         {
             _messageDAL.Update(entity);
         }

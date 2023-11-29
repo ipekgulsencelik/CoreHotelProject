@@ -2,15 +2,15 @@
 
 namespace HotelProject.BusinessLayer.Abstract
 {
-    public interface IMessageService : IGenericService<Message>
+    public interface IMessageService : IGenericService<ContactMessage>
     {
-        List<Message> TGetInboxList(string session);
-        List<Message> TGetSendboxList(string session);
-        List<Message> TGetReadList(string session);
-        List<Message> TGetUnReadList(string session);
-        List<Message> TGetDraftList(string session);
-        List<Message> TGetTrashList();
-        List<Message> TGetSpamList(string session);
-        List<Message> TGetImportantList(string session);
+        List<ContactMessage> TGetInboxList(string session);
+        List<ContactMessage> TGetSendboxList(string session);
+        List<ContactMessage> TGetReadList(string session);
+        List<ContactMessage> TGetUnReadList(string session);
+        List<ContactMessage> TGetDraftList(string session);
+        List<ContactMessage> TGetTrashList();
+        List<ContactMessage> TGetSpamList(string session);
+        List<ContactMessage> TGetImportantList(string session);
     }
 }

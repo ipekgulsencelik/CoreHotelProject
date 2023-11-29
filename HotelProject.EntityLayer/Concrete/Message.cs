@@ -1,30 +1,18 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Reflection.Metadata.Ecma335;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace HotelProject.EntityLayer.Concrete
 {
     public class Message
     {
-        [Key]
         public int MessageID { get; set; }
-
-        [StringLength(50)]
-        public string SenderMail { get; set; }
-
-        [StringLength(50)]
-        public string ReceiverMail { get; set; }
-
-        [StringLength(100)]
+        public string Mail { get; set; }
+        public string NameSurname { get; set; }
         public string Subject { get; set; }
-
-        // [AllowHtml]
         public string MessageContent { get; set; }
-
-        public DateTime MessageDate { get; set; }
-
-        public bool IsDraft { get; set; }
-        public bool IsTrash { get; set; }
-        public bool IsRead { get; set; }
-        public bool IsImportant { get; set; }
-        public bool IsSpam { get; set; }
     }
 }

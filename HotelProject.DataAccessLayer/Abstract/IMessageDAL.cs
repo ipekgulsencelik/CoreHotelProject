@@ -2,15 +2,15 @@
 
 namespace HotelProject.DataAccessLayer.Abstract
 {
-    public interface IMessageDAL : IGenericDAL<Message>
+    public interface IMessageDAL : IGenericDAL<ContactMessage>
     {
-        List<Message> GetInboxList(string session);
-        List<Message> GetSendboxList(string session);
-        List<Message> GetReadList(string session);
-        List<Message> GetUnReadList(string session);
-        List<Message> GetDraftList(string session);
-        List<Message> GetTrashList();
-        List<Message> GetSpamList(string session);
-        List<Message> GetImportantList(string session);
+        List<ContactMessage> GetInboxList(string session);
+        List<ContactMessage> GetSendboxList(string session);
+        List<ContactMessage> GetReadList(string session);
+        List<ContactMessage> GetUnReadList(string session);
+        List<ContactMessage> GetDraftList(string session);
+        List<ContactMessage> GetTrashList();
+        List<ContactMessage> GetSpamList(string session);
+        List<ContactMessage> GetImportantList(string session);
     }
 }
