@@ -1,30 +1,12 @@
-﻿using System.ComponentModel.DataAnnotations;
-
-namespace HotelProject.EntityLayer.Concrete
+﻿namespace HotelProject.EntityLayer.Concrete
 {
-    public class ContactMessage
+	public class ContactMessage
     {
-        [Key]
-        public int MessageID { get; set; }
-
-        [StringLength(50)]
-        public string SenderMail { get; set; }
-
-        [StringLength(50)]
-        public string ReceiverMail { get; set; }
-
-        [StringLength(100)]
-        public string Subject { get; set; }
-
-        // [AllowHtml]
-        public string MessageContent { get; set; }
-
-        public DateTime MessageDate { get; set; }
-
-        public bool IsDraft { get; set; }
-        public bool IsTrash { get; set; }
-        public bool IsRead { get; set; }
-        public bool IsImportant { get; set; }
-        public bool IsSpam { get; set; }
+		public int ContactMessageID { get; set; }
+		public string? Mail { get; set; }
+		public string? NameSurname { get; set; }
+		public string? Subject { get; set; }
+		public string? MessageContent { get; set; }
+		public bool IsActive { get; set; }
     }
 }

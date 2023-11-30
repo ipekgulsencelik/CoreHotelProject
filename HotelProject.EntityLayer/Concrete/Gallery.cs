@@ -1,15 +1,11 @@
-﻿using Microsoft.EntityFrameworkCore.Metadata;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace HotelProject.EntityLayer.Concrete
+﻿namespace HotelProject.EntityLayer.Concrete
 {
-    public class Gallery
+	public class Gallery
     {
         public int GalleryID { get; set; }
-        public string ImageUrl { get; set; }
-    }
+		public string? ImageName { get; set; }
+		public string? ImageURL { get; set; }
+		public DateTime ImageDate { get; set; }
+		public bool IsActive { get; set; }
+	}
 }
