@@ -16,8 +16,8 @@ namespace HotelProject.EntityLayer.Concrete
 		public EnumOrderState OrderState { get; set; }
 		public bool Status { get; set; }
 
-		public int PaymetID { get; set; }
-		public virtual Payment Payment { get; set; }
+		public int PaymentID { get; set; }
+		public Payment Payment { get; set; }
 
 		public List<OrderDetail> OrderDetails { get; set; }
 	}

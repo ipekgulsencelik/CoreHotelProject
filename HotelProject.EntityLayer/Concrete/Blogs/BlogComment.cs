@@ -2,7 +2,7 @@
 {
 	public class BlogComment
 	{
-		public int CommentID { get; set; }
+		public int BlogCommentID { get; set; }
 		public string NameSurname { get; set; }
 		public string Email { get; set; }
 		public DateTime CommentDate { get; set; }

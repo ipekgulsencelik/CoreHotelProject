@@ -2,7 +2,7 @@
 {
 	public class BlogCategory
 	{
-		public int RoomCategoryID { get; set; }
+		public int BlogCategoryID { get; set; }
 		public string CategoryName { get; set; }
 		public string CategoryDescription { get; set; }
 		public DateTime CategoryDate { get; set; }

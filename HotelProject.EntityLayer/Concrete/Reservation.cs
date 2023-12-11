@@ -7,5 +7,7 @@
 		public int ChildCount { get; set; }
 		public DateTime CheckInDate { get; set; }
 		public DateTime CheckOutDate { get; set; }
-	}
+
+        public List<Booking> Bookings { get; set; }
+    }
 }

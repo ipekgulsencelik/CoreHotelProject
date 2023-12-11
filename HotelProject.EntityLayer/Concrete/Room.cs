@@ -22,5 +22,6 @@ namespace HotelProject.EntityLayer.Concrete
 		public List<Comment> Comments { get; set; }
 		public List<OrderDetail> OrderDetails { get; set; }
 		public List<Basket> Baskets { get; set; }
+		public List<Booking> Bookings { get; set; }
 	}
 }
