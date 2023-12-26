@@ -1,0 +1,43 @@
+﻿@model List<HotelProject.EntityLayer.Concrete.About>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Areas/Admin/Views/Admin/Index.cshtml";
+    int count = 0;
+}
+
+<div class="col-lg-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Hakkımızda</h4>
+           
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Başlık1</th>
+                        <th>Başlık2</th>
+                        <th>Açıklama1</th>
+                        <th>Açıklama2</th>
+                        <th>Video Url</th>
+                        <th>Durum</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach(var item in Model)
+                    {
+                        count++;
+                        <tr>
+                        <td>@count</td>
+                        <td>@item.Title1</td>
+                        <td>@item.Title2</td>
+                        <td>@item.Description1</td>
+                        <td>@item.Description2</td>
+                        <td>@item.VideoURL</td>                       
+                        <td><label class="badge badge-danger">@item.IsActive</label></td>
+                    </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

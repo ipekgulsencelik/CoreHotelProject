@@ -9,7 +9,7 @@ namespace HotelProject.DataAccessLayer.Concrete
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("server=MSI;database=MyHotelDB;integrated security=true;trusted_connection=true;encrypt=false");
+            optionsBuilder.UseSqlServer("server=SAADET\\SQLEXPRESS01;database=MyHotelDB;integrated security=true;trusted_connection=true;encrypt=false");
         }
 
         public DbSet<Contact> Contacts { get; set; }

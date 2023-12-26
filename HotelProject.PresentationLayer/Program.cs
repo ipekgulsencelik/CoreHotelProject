@@ -19,6 +19,10 @@ builder.Services.AddScoped<IContactService, ContactManager>();
 builder.Services.AddScoped<IMessageDAL, EFMessageDAL>();
 builder.Services.AddScoped<IMessageService, MessageManager>();
 
+builder.Services.AddScoped<IAboutDAL, EFAboutDAL>();
+builder.Services.AddScoped<IAboutService, AboutManager>();
+
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -40,4 +44,13 @@ app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
 
+app.UseEndpoints(endpoints =>
+{
+    endpoints.MapControllerRoute(
+      name: "areas",
+      pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}"
+    );
+});
+
 app.Run();
+
