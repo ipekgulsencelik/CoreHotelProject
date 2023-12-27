@@ -22,6 +22,26 @@ builder.Services.AddScoped<IMessageService, MessageManager>();
 builder.Services.AddScoped<IAboutDAL, EFAboutDAL>();
 builder.Services.AddScoped<IAboutService, AboutManager>();
 
+builder.Services.AddScoped<IRestaurantDAL, EFRestaurantDAL>();
+builder.Services.AddScoped<IRestaurantService, RestaurantManager>();
+
+builder.Services.AddScoped<IReviewDAL, EFReviewDAL>();
+builder.Services.AddScoped<IReviewService, ReviewManager>();
+
+builder.Services.AddScoped<IRoomCategoryDAL, EFRoomCategoryDAL>();
+builder.Services.AddScoped<IRoomCategoryService, RoomCategoryManager>();
+
+builder.Services.AddScoped<IRoomDetailDAL, EFRoomDetailDAL>();
+builder.Services.AddScoped<IRoomDetailService, RoomDetailManager>();
+
+builder.Services.AddScoped<IRoomDAL, EFRoomDAL>();
+builder.Services.AddScoped<IRoomService, RoomManager>();
+
+builder.Services.AddScoped<IRoomStatusDAL, EFRoomStatusDAL>();
+builder.Services.AddScoped<IRoomStatusService, RoomStatusManager>();
+
+builder.Services.AddScoped<IServiceDAL, EFServiceDAL>();
+builder.Services.AddScoped<IServiceService, ServiceManager>();
 
 var app = builder.Build();
 

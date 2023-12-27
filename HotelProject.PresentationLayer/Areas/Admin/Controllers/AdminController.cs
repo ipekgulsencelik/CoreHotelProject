@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace HotelProject.PresentationLayer.Areas.Admin
+namespace HotelProject.PresentationLayer.Areas.Admin.Controllers
 {
     public class AdminController : Controller
     {
