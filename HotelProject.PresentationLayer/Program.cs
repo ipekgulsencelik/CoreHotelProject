@@ -37,9 +37,6 @@ builder.Services.AddScoped<IRestaurantService, RestaurantManager>();
 builder.Services.AddScoped<IServiceDAL, EFServiceDAL>();
 builder.Services.AddScoped<IServiceService, ServiceManager>();
 
-
-
-
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
