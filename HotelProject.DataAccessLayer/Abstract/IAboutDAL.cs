@@ -1,13 +1,10 @@
 ﻿using HotelProject.EntityLayer.Concrete;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace HotelProject.DataAccessLayer.Abstract
 {
-    public interface IAboutDAL:IGenericDAL<About>
-    {
-    }
+	public interface IAboutDAL : IGenericDAL<About>
+	{
+		void ChangeAboutStatus(int id);
+		About GetAbout();
+	}
 }

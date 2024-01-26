@@ -13,6 +13,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HotelProject.DataAccessLaye
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HotelProject.DTOLayer", "HotelProject.DTOLayer\HotelProject.DTOLayer.csproj", "{9C30C179-FB7C-4B0A-8A63-C6206266E7FE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HotelProject.WebAPI", "HotelProject.WebAPI\HotelProject.WebAPI.csproj", "{489FDA29-3ACD-4443-8329-AF7F658E1245}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{9C30C179-FB7C-4B0A-8A63-C6206266E7FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9C30C179-FB7C-4B0A-8A63-C6206266E7FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9C30C179-FB7C-4B0A-8A63-C6206266E7FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{489FDA29-3ACD-4443-8329-AF7F658E1245}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{489FDA29-3ACD-4443-8329-AF7F658E1245}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{489FDA29-3ACD-4443-8329-AF7F658E1245}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{489FDA29-3ACD-4443-8329-AF7F658E1245}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

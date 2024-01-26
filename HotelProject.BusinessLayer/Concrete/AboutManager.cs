@@ -13,12 +13,22 @@ namespace HotelProject.BusinessLayer.Concrete
             _aboutDAL = aboutDAL;
         }
 
-        public void TDelete(About entity)
+		public void TChangeAboutStatus(int id)
+		{
+			_aboutDAL.ChangeAboutStatus(id);
+		}
+
+		public void TDelete(About entity)
         {
             _aboutDAL.Delete(entity);
         }
 
-        public About TGetByID(int id)
+		public About TGetAbout()
+		{
+            return _aboutDAL.GetAbout();
+		}
+
+		public About TGetByID(int id)
         {
             return _aboutDAL.GetByID(id);
         }
